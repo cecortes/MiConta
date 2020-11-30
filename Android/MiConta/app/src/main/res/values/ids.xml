@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="TxtLayPass" type="id" />
+    <item name="TxtLayUsr" type="id" />
+    <item name="constraintLayout" type="id" />
+    <item name="TxtUsr" type="id" />
+    <item name="TxtPass" type="id" />
+</resources>

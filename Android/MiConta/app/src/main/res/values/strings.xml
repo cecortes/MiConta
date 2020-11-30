@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Jarvis Contador</string>
+    <string name="content_description_media">fondo</string>
+    <string name="hint_usr">Correo de usuario</string>
+    <string name="usr">Usuario</string>
+    <string name="hint_pass">Password</string>
+    <string name="pass">Contraseña</string>
+</resources>
