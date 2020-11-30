@@ -1,1 +1,9 @@
 CREATE TABLE IF NOT EXITS usr (usr_id INT AUTO_INCREMENT PRIMARY KEY, usr_correo VARCHAR(45) NOT NULL, usr_pwd VARCHAR(45) NOT NULL, usr_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP) ENGINE=INNODB;
+
+CREATE TABLE `usr` (
+  `usr_id` int(11) NOT NULL AUTO_INCREMENT,
+  `usr_correo` varchar(45) DEFAULT NULL,
+  `usr_pwd` varchar(45) DEFAULT NULL,
+  `usr_created` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`usr_id`)
+) ENGINE=InnoDB;
