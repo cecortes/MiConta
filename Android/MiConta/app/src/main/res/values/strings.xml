@@ -7,4 +7,5 @@
     <string name="pass">Contraseña</string>
     <string name="usuario">Registrar usuario</string>
     <string name="login">Ingresar</string>
+    <string name="new_usr">Alta de Usuario</string>
 </resources>

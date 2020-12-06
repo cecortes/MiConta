@@ -41,6 +41,102 @@
         android:layout_marginTop="152dp"
         app:layout_anchorGravity="center" >
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TxtLayNewUsr"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="50dp"
+            android:hint="@string/usr"
+            app:hintTextColor="@color/fondo"
+            android:textColorHint="@color/fondo"
+            app:boxStrokeColor="@color/secondaryDarkColor"
+            app:errorEnabled="true"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/secondaryLightColor"
+            app:helperText="@string/hint_usr"
+            app:helperTextTextColor="@color/secondaryLightColor"
+            app:helperTextEnabled="true"
+            app:startIconDrawable="@drawable/ic_account"
+            app:startIconTint="@color/secondaryLightColor"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TxtNewUsr"
+                android:fontFamily="@font/average_sans"
+                android:gravity="center"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/secondaryLightColor"
+                android:textSize="24sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TxtLayNewPass"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="50dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pass"
+            android:textColorHint="@color/fondo"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxStrokeColor="@color/secondaryDarkColor"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/secondaryLightColor"
+            app:errorEnabled="true"
+            app:helperText="@string/hint_pass"
+            app:helperTextEnabled="true"
+            app:helperTextTextColor="@color/secondaryLightColor"
+            app:hintTextColor="@color/fondo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TxtLayNewUsr"
+            app:startIconDrawable="@drawable/ic_key"
+            app:startIconTint="@color/secondaryLightColor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/TxtNewPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/average_sans"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:textColor="@color/secondaryLightColor"
+                android:textSize="24sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/BtnNewUsr"
+            android:text="@string/new_usr"
+            android:textColor="@color/primaryTextColor"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_marginTop="90dp"
+            app:icon="@drawable/ic_newusr"
+            app:iconTint="@color/primaryTextColor"
+            android:backgroundTint="@color/secondaryLightColor"
+            app:strokeColor="@color/primaryTextColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TxtLayNewPass" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
