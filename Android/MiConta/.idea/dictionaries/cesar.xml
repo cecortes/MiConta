@@ -2,17 +2,47 @@
   <dictionary name="cesar">
     <words>
       <w>agregado</w>
+      <w>arreglo</w>
       <w>banderas</w>
+      <w>captura</w>
+      <w>construye</w>
       <w>contador</w>
+      <w>contraseña</w>
+      <w>correo</w>
+      <w>credenciales</w>
+      <w>datos</w>
+      <w>dentro</w>
       <w>estado</w>
+      <w>función</w>
       <w>globales</w>
       <w>implementación</w>
+      <w>incorrectos</w>
       <w>limpiar</w>
+      <w>medio</w>
+      <w>métodos</w>
+      <w>necesaria</w>
+      <w>nomsesion</w>
       <w>nuevo</w>
+      <w>objeto</w>
       <w>objetos</w>
+      <w>otros</w>
+      <w>parámetro</w>
+      <w>pasa</w>
+      <w>pasamos</w>
+      <w>prepara</w>
       <w>puede</w>
+      <w>putextra</w>
+      <w>recibe</w>
+      <w>regresar</w>
+      <w>respuesta</w>
+      <w>salida</w>
+      <w>sesion</w>
+      <w>siguiente</w>
       <w>textos</w>
       <w>usuario</w>
+      <w>validación</w>
+      <w>validar</w>
+      <w>válida</w>
     </words>
   </dictionary>
 </component>

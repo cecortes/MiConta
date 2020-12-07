@@ -2,6 +2,7 @@ package com.example.miconta;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
@@ -115,7 +116,7 @@ public class Registrar extends AppCompatActivity {
             String url = "http://sylkaventas.ddns.net/conta_addusr.php?u="
                     + usuario + "&p=" + pwd;
 
-            //Jason Request
+            //Json Request
             JsonObjectRequest insertRQ = new JsonObjectRequest(Request.Method.GET, url,
                     null, new Response.Listener<JSONObject>() {
                 @Override
@@ -131,6 +132,12 @@ public class Registrar extends AppCompatActivity {
                     //Clear text inputs
                     LimpiarTextos();
 
+                    //Regresar al activity principal
+                    startActivity(new Intent(Registrar.this, MainActivity.class));
+
+                    //Close Registrar activity
+                    finish();
+
                 }
             }, new Response.ErrorListener() {
                 @Override
@@ -140,7 +147,7 @@ public class Registrar extends AppCompatActivity {
                     MaterialAlertDialogBuilder err = new MaterialAlertDialogBuilder(Registrar.this);
                     err.setMessage("No se puede dar de alta al usuario");
                     err.setTitle("Error Jarvis Contador");
-                    err.setIcon(R.drawable.ic_account);
+                    err.setIcon(R.drawable.ic_error);
                     err.create().show();
 
                 }
